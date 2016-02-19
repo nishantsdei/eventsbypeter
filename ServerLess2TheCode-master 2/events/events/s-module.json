@@ -1,0 +1,37 @@
+{
+  "name": "events",
+  "version": "0.0.1",
+  "profile": "aws-v0.2.0",
+  "location": "https://github.com/...",
+  "author": "",
+  "description": "A Serverless Module",
+  "custom": {},
+  "cloudFormation": {
+    "resources": {},
+    "lambdaIamPolicyDocumentStatements": [
+      {
+            "Effect": "Allow",
+            "Action": [
+              "dynamodb:GetItem",
+              "dynamodb:BatchGetItem",
+              "dynamodb:Query",
+              "dynamodb:PutItem",
+              "dynamodb:UpdateItem",
+              "dynamodb:DeleteItem",
+              "dynamodb:BatchWriteItem"
+            ],
+            "Resource": ["*"]
+      },
+      {
+        "Action": [
+          "kinesis:DescribeStream",
+          "kinesis:ListStreams",
+          "kinesis:GetShardIterator",
+          "kinesis:GetRecords"
+        ],
+        "Effect": "Allow",
+        "Resource": ["*"]
+      }
+    ]
+  }
+}

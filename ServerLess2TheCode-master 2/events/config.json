@@ -1,0 +1,7 @@
+{
+  "DDB_PROFILEACTIVITY_TABLE":"profileActivities-development",
+  "DDB_EVENT_TABLE":"events-development",
+  "DDB_EVENTACTIVITY_TABLE":"eventActivities-development",
+  "DDB_CODESTATUS_TABLE":"codeStatus-development",
+  "REGION":"us-east-1"
+}
